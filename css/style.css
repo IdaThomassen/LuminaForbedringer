@@ -22,8 +22,8 @@
   z-index: 2;
 }
 
-#topNav.scrolled{
-  background-color: #F28F2C;
+#topNav.scrolled {
+  background-color: #f28f2c;
 }
 
 /* skal have givet hvert ikon en class i html */
@@ -79,7 +79,6 @@
   margin: 0.5rem 0;
 }
 
-
 .hero-text p {
   font-size: 1.2rem;
   margin: 0.5rem 0;
@@ -118,7 +117,7 @@
 /* Main */
 main {
   position: relative;
-  background: #E3E3D0;
+  background: #e3e3d0;
   color: #000;
   padding: 1rem;
 }
@@ -171,7 +170,8 @@ h3 {
 
 #minilogo img {
   max-width: 120px;
-  height: auto;
+  height: 95px;
+  padding-bottom: 30px;
 }
 
 /*About us text*/
@@ -179,11 +179,13 @@ p.p2 {
   display: flex;
   justify-content: center;
   text-align: center;
-  max-width: 700px;
   margin: 0 auto;
-  line-height: 1.6;
+  line-height: 36px;
   font-size: 1.1rem;
   padding-bottom: 3rem;
+  font-size: 18px;
+  font-family: "Inter", sans-serif;
+  font-weight: lighter;
 }
 
 /*Centered stack (Coming soon speaker images)*/
@@ -203,7 +205,7 @@ p.p2 {
 
 /* Footer center */
 footer {
-  background-color: #E3E3D0;
+  background-color: #f28f2c;
   display: flex;
   justify-content: space-around;
   gap: 2rem;
@@ -212,36 +214,40 @@ footer {
 }
 
 .footer article {
-  max-width: 250px;
+  height: 350px;
 }
 /* font size */
-h4{
-  font-size: 25px;
+h4 {
+  font-size: 18px;
+  font-family: ;
+}
+footer p {
+  font-size: 16px;
+  line-height: 32px;
+  font-family: "inter", sans-serif;
 }
 
 /*copy right text*/
 #bunden {
-  background-color: #E3E3D0;
+  background-color: #f28f2c;
   padding-bottom: 10px;
   display: flex;
   justify-content: space-around;
-  
 }
 
 /* RESPONSIVE DESIGN */
 @media (max-width: 600px) {
   body {
-  background-color: #E3E3D0;
+    background-color: #e3e3d0;
   }
   #photos {
     display: block;
   }
-  
 }
 
 @media (min-width: 601px) and (max-width: 1024px) {
   body {
-    background-color: #E3E3D0;
+    background-color: #e3e3d0;
   }
   #photos {
     display: block;
