@@ -11,7 +11,7 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: 60px;
+  height: 48px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -23,9 +23,10 @@
 }
 
 #topNav.scrolled{
-  background-color: #E3E3D0;
+  background-color: #F28F2C;
 }
 
+/* skal have givet hvert ikon en class i html */
 #topNav img {
   height: 30px;
   cursor: pointer;
