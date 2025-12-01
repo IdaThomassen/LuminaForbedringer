@@ -60,7 +60,7 @@
   position: absolute;
   top: 127px;
   left: 153px;
-  width:auto;
+  width: auto;
   height: auto;
   object-fit: cover;
   z-index: 0;
@@ -283,8 +283,8 @@ p.p2 {
   display: block;
 }
 
-/* Footer center */
-footer {
+/* Footer top 3 kolonner */
+.footer {
   background-color: #f28f2c;
   display: flex;
   justify-content: space-around;
@@ -294,25 +294,59 @@ footer {
 }
 
 .footer article {
-  height: 350px;
-}
-/* font size */
-h4 {
-  font-size: 18px;
-  font-family: ;
-}
-footer p {
-  font-size: 16px;
-  line-height: 32px;
-  font-family: "inter", sans-serif;
+  height: auto;
 }
 
-/*copy right text*/
+h4 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  font-size: 16px;
+  line-height: 32px;
+  font-family: "Inter", sans-serif;
+  color: #000000;
+}
+
+#footer-lumina-info {
+  color: rgb(46, 130, 130);
+  background-color: #f28f2c;
+}
+
+
+
+/* Responsivt: på små skærme får input + info fuld bredde */
+@media (max-width: 600px) {
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .footer-signup {
+    width: 100%;
+    align-items: flex-start;
+  }
+
+  .input-wrapper {
+    width: 100%;
+  }
+}
+
+
+/* Copyright nederst */
 #bunden {
   background-color: #f28f2c;
-  padding-bottom: 10px;
+  padding: 10px 2rem;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
+  font-family: "Inter", sans-serif;
+  font-size: 14px;
+}
+
+.tilmeldKnap {
+  background-color: #308e77;
+  
 }
 
 /* RESPONSIVE DESIGN */
