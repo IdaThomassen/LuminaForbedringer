@@ -10,15 +10,30 @@
     <!-- Made the 3 style imports lines into 1 -->
     <style>
       @import url("https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Judson:ital,wght@0,400;0,700;1,400&display=swap");
+      @import url("https://fonts.googleapis.com/css2?family=Honk&family=Roboto:ital,wght@0,100..900;1,100..900&family=Space+Grotesk:wght@300..700&family=Story+Script&display=swap");
     </style>
   </head>
   <body>
-    <!-- this is the navigation/top bar -->
+    <!-- nav burger menu -->
     <nav id="topNav">
-      <a>
-        <img src="images/burger menu 2.svg" alt="burgermenu" />
-      </a>
-      <!--nav logo -->
+      <div id="burgermenuOgTekst">
+        <a>
+          <img
+            class="burgerMenuIkon"
+            src="images/burger menu 2.svg"
+            alt="burgermenu"
+          />
+        </a>
+        <a>
+          <img
+            class="lumina-tekst-logo"
+            src="images/LOGO LUMINA Tekst 2.svg"
+            alt="Logo Lumina tekst efter burgermenu"
+          />
+        </a>
+      </div>
+
+      <!--nav logo i midten -->
       <a>
         <img
           class="nav-logo"
@@ -26,7 +41,8 @@
           alt="Logo Lumina in the middle of the top nav"
         />
       </a>
-      <!-- top nav logos -->
+
+      <!-- top nav ikoner: søg, person og kurv -->
       <a>
         <img src="images/søg 2.svg" alt="search logo" />
         <img src="images/person 2.svg" alt="login" />
@@ -43,19 +59,29 @@
       <section class="hero-text">
         <h1>LUMINA</h1>
         <p class="p1">ONE</p>
-        <p>Én højtaler. Uendelige øjeblikke</p>
-        <p>1995,-</p>
-        <a>
-          <img src="images/KØB NU.png" alt="buy now button" />
-        </a>
+        <p3>Én højtaler. Uendelige øjeblikke</p3>
+        <p4>
+          Op til 18 timers spilletid
+          <br />
+          Dynamisk farverigt lysshow der kan tilpasses
+          <br />
+          Social Connect - bland jeres playlister
+          <br />
+          IPX5 Vandafvisende
+          <br />
+          Op til 100 dB
+          <br />
+          4,5 kg
+        </p4>
+
+        <div class="pris-og-knap">
+          <p class="pris">1995,-</p>
+          <button id="KØB-NU-button" class="button-køb-nu">KØB NU</button>
+        </div>
       </section>
 
       <!-- Hero bottom text -->
-      <p class="hero-bottom-text">
-        <span>SUPPORT</span>
-        <span>GRATIS FRAGT</span>
-        <span>GARANTI</span>
-      </p>
+      <!-- her bør jeg kunne lave den orange bar -->
     </header>
 
     <!-- Images and logos -->
@@ -161,6 +187,19 @@
     <p id="bunden">&copy; Ida Thomassen - 2025</p>
 
     <script>
+      const købNuBtn = document.getElementById("KØB-NU-button");
+
+      købNuBtn.addEventListener("click", function () {
+        this.classList.toggle("active");
+
+        // Skifter tekst baseret på om knappen har klassen "active"
+        if (this.classList.contains("active")) {
+          this.textContent = "TILFØJET";
+        } else {
+          this.textContent = "KØB NU";
+        }
+      });
+
       const nav = document.getElementById("topNav");
 
       window.addEventListener("scroll", () => {
