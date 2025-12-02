@@ -14,7 +14,6 @@ købNuBtn.addEventListener("click", function () {
 });
 
 
-
 const nav = document.getElementById("topNav");
 
 window.addEventListener("scroll", () => {

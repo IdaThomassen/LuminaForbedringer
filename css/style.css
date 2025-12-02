@@ -220,99 +220,96 @@
 main {
   position: relative;
   background: #ffffff;
-  color: #000;
   padding: 1rem;
 }
 
-/* Her skal karrusellen være */
-.produkt-karusel {
-  position: relative;
-  width: 100%;
-  overflow: hidden;
+/* endnu en test af karusel */
+/* ----- CENTER WRAPPER ----- */
+.karusel-container {
+  max-width: 1200px; /* Juster hvis du vil have mere/mindre bredde */
+  margin: 0 auto; /* CENTERER hele karusellen */
+  overflow: hidden; /* Skjuler begyndelsen/slutningen */
   padding: 20px 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
-.karusel-spor {
+/* ----- SCROLL AREA ----- */
+.produkt-scroll {
   display: flex;
   gap: 40px;
-  transition: transform 0.4s ease;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding: 0 10px;
+  scrollbar-width: none;
 }
 
-/* --- CAROUSEL BUTTONS --- */
-.karusel-knap {
-  background: white;
-  border: none;
-  font-size: 40px;
-  cursor: pointer;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-  z-index: 10;
+.produkt-scroll::-webkit-scrollbar {
+  display: none;
 }
 
-.karusel-knap:hover {
-  background: #f4f4f4;
-}
+/* ----- PRODUKT KORT ----- */
+.produkt-kort-ny {
+  min-width: calc((1200px - 80px) / 3);
+  /* ^ 3 cards per view (1200 width - 2 gaps of 40px) */
 
-/* --- produkt kort --- */
-.produkt-kort {
-  width: 340px;
   background: #fff;
   border-radius: 20px;
   padding: 20px;
-  box-shadow: 0px 8px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  scroll-snap-align: start;
 }
 
-.produkt-kort img {
+.produkt-kort-ny img {
   width: 100%;
   border-radius: 20px;
 }
 
-.produkt-kort h2 {
-  font-size: 28px;
+.produkt-kort-ny h2 {
+  font-size: 32px;
   margin: 18px 0 10px;
-  font-family: "Space Grotesk", sans-serif;
+  font-family: "Inria Sans", sans-serif;
+  color: #000000;
+  font-weight: lighter;
 }
 
-/* ---- COLOR DOTS ---- */
-.f4-farver {
+/* ---- FARVET CIRKLER ---- */
+.farve-cirkler {
   display: flex;
   gap: 10px;
-  margin-bottom: 10px;
+  margin-bottom: 8px;
 }
 
-.prik {
+.dot {
   width: 14px;
   height: 14px;
   border-radius: 50%;
   display: inline-block;
   border: 1px solid #000000;
 }
-/* farverne på de 4 prikker */
+
 .hvid {
   background: #eae4de;
 }
 .rose {
   background: #d28e92;
 }
-.lavendel {
+.lavender {
   background: #dfcad7;
 }
-.green {
+.grøn {
   background: #aac29f;
 }
 
-/* ---- pris ---- */
-.pris-kort {
+/* ---- PRICE ---- */
+.prisen {
   font-size: 20px;
   font-weight: 600;
   margin: 10px 0 20px;
+  color: #000000;
+  font-family: "Inria Sans", sans-serif;
+  font-weight: lighter;
 }
 
-/* ---- knapper i kortet ---- */
+/* ---- KNAPPERNE ---- */
 .kort-knapper {
   display: flex;
   justify-content: space-between;
@@ -321,7 +318,7 @@ main {
 .læs-mere-knap {
   background: #f9e5c6;
   border: 1px solid black;
-  padding: 12px 20px;
+  padding: 12px 30px;
   border-radius: 12px;
   font-size: 15px;
   cursor: pointer;
@@ -330,7 +327,7 @@ main {
 .køb-nu-knap {
   background: #f19a2b;
   border: 1px solid black;
-  padding: 12px 20px;
+  padding: 12px 40px;
   border-radius: 12px;
   font-size: 15px;
   cursor: pointer;
