@@ -24,6 +24,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
+
 // Run on page load in case user refreshes mid-scroll
 if (window.scrollY === 0) {
   nav.classList.add("scrolled");
