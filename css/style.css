@@ -223,16 +223,15 @@ main {
   padding: 1rem;
 }
 
-/* endnu en test af karusel */
-/* ----- CENTER WRAPPER ----- */
+/* Karusel */
 .karusel-container {
-  max-width: 1200px; /* Juster hvis du vil have mere/mindre bredde */
-  margin: 0 auto; /* CENTERER hele karusellen */
-  overflow: hidden; /* Skjuler begyndelsen/slutningen */
+  max-width: 1200px; 
+  margin: 0 auto; 
+  overflow: hidden; 
   padding: 20px 0;
 }
 
-/* ----- SCROLL AREA ----- */
+/* ----- SCROLL OMRÅDE ----- */
 .produkt-scroll {
   display: flex;
   gap: 40px;
@@ -249,7 +248,6 @@ main {
 /* ----- PRODUKT KORT ----- */
 .produkt-kort-ny {
   min-width: calc((1200px - 80px) / 3);
-  /* ^ 3 cards per view (1200 width - 2 gaps of 40px) */
 
   background: #fff;
   border-radius: 20px;
@@ -299,7 +297,7 @@ main {
   background: #aac29f;
 }
 
-/* ---- PRICE ---- */
+/* ---- PRISEN ---- */
 .prisen {
   font-size: 20px;
   font-weight: 600;
@@ -364,20 +362,6 @@ p.p2 {
   font-weight: lighter;
 }
 
-/*Centered stack (Coming soon speaker images)*/
-.centered-stack {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 20px;
-  padding: 20px;
-}
-
-.centered-stack article img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
 
 /* Footer top 3 kolonner */
 .footer {
