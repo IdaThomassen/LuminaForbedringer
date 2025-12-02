@@ -61,17 +61,16 @@
 /* width and height ændre str på video */
 .hero__video {
   position: absolute;
-  top: 127px;
+  top: 150px;
   left: 153px;
-  width: auto;
-  height: auto;
-  object-fit: cover;
+  width: 600px;
+  height: 550px;
+  object-fit: scale-down 0.5;
   z-index: 0;
 }
 
 /* Shared hero overlay text (LUMINA + ONE) HER BØR JEG KUNNE FIKSE PLACERINGEN PÅ TEKSTEN */
-.hero-text,
-.hero-bottom-text {
+.hero-text {
   position: absolute;
   z-index: 1;
   color: rgb(0, 0, 0);
@@ -84,6 +83,8 @@
   font-size: 16px;
   font-style: italic;
   font-weight: 300;
+  margin-top: 16px;
+  margin-bottom: 50px;
 }
 
 .p4 {
@@ -92,9 +93,34 @@
   font-size: 16px;
   font-style: italic;
   font-weight: 300;
-  margin-top: 120px;
-  margin-bottom: 125px;
 }
+
+/* lumina hero center text */
+.hero-text {
+  right: 154px;
+  top: 400px;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  text-align: right;
+}
+/* LUMINA tekst */
+.hero-text h1 {
+  font-size: 68px;
+  margin: 0.5rem 0;
+  color: rgb(0, 0, 0);
+}
+
+/* bruges til ordet ONE */
+.hero-text .p1 {
+  font-size: 69px;
+  font-family: "Judson", serif;
+  color: #000000;
+  margin: 0;
+  margin-top: -40px;
+}
+
+/* her kommer pris og køb nu knap */
 
 /*KØB NU knappen*/
 .button-køb-nu {
@@ -138,63 +164,14 @@
   align-items: center;
   gap: 20px;
   justify-content: flex-end;
-  margin-top: 20px;
+  margin-top: 80px;
 }
 
 .hero-text .pris {
   font-family: "Judson", sans-serif;
   font-size: 30px;
   font-weight: bold;
-  color: black;
-}
-
-/* lumina hero center text */
-.hero-text {
-  right: 154px;
-  top: 55%;
-  transform: translateY(-50%);
-  display: flex;
-  flex-direction: column;
-  text-align: right;
-}
-
-.hero-text h1 {
-  font-size: 68px;
-  margin: 0.5rem 0;
-}
-
-.hero-text p {
-  font-size: 1.2rem;
-  margin: 0.5rem 0;
-}
-
-.hero-text .p1 {
-  font-size: 69px;
-  font-family: "Judson", serif;
-  color: #000000;
-  margin: 0;
-  margin-top: -42px;
-}
-
-/* New bottom line text */
-.hero-bottom-text {
-  bottom: 20px;
-  left: 50%;
-  transform: translateX(-50%);
-  display: flex;
-  gap: 2rem;
-  font-size: 1.2rem;
-  width: 100%;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding-left: 40px;
-  padding-right: 40px;
-}
-
-.hero-bottom-text span {
-  white-space: nowrap;
+  color: rgb(0, 0, 0);
 }
 
 /* Orange linje under header */
