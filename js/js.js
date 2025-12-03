@@ -39,6 +39,21 @@ button.addEventListener("click", () => {
   button.disabled = true;
 });
 
+// footer bunden //
+const footerBtn = document.getElementById("footerSubmitBtn");
+const footerEmail = document.getElementById("footerEmail");
+
+footerBtn.addEventListener("click", () => {
+  if (footerEmail.value.trim() === "") {
+    alert("Indtast venligst en e-mail.");
+    return;
+  }
+
+  footerBtn.textContent = "Tilmeldt";
+  footerBtn.disabled = true;
+});
+
+
 // Run on page load in case user refreshes mid-scroll
 if (window.scrollY === 0) {
   nav.classList.add("scrolled");

@@ -395,7 +395,7 @@ main {
   justify-content: space-between;
   align-items: center;
   gap: 60px;
-  padding: 120px 154px;
+  padding: 120px 154px 80px 154px;
   font-family: "Inter", sans-serif;
   font-weight: 200;
   font-style: italic;
@@ -503,7 +503,7 @@ p.p2 {
   margin: 0 auto;
   line-height: 36px;
   font-size: 1.1rem;
-  padding-bottom: 3rem;
+  padding-bottom: 80px;
   font-size: 18px;
   font-family: "Inter", sans-serif;
   font-weight: lighter;
@@ -540,6 +540,64 @@ h4 {
   color: rgb(168, 16, 16);
   background-color: #f28f2c;
 }
+
+/* Footer bund sektion */
+.lumina-footer {
+    background-color: #e29648; /* samme farve som dit billede */
+    padding: 25px 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: Arial, sans-serif;
+}
+
+.footer-left p {
+    margin: 4px 0;
+    font-size: 14px;
+}
+
+.footer-right {
+    text-align: right;
+}
+
+.newsletter-label {
+    margin: 0 0 8px 0;
+    font-size: 14px;
+}
+
+.footer-signup {
+    display: flex;
+    align-items: center;
+    background-color: #f3ead8;
+    padding: 6px 10px;
+    border-radius: 12px;
+    gap: 10px;
+}
+
+.footer-signup input {
+    border: none;
+    background: transparent;
+    padding: 6px 8px;
+    font-size: 14px;
+    outline: none;
+    width: 180px;
+}
+
+.footer-signup button {
+    background-color: #6b4321;
+    border: none;
+    padding: 5px 12px;
+    color: white;
+    border-radius: 8px;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+.footer-signup button:disabled {
+    background-color: #4CAF50;
+    cursor: default;
+}
+
 
 /* Responsivt: på små skærme får input + info fuld bredde */
 @media (max-width: 600px) {
