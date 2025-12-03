@@ -1,5 +1,6 @@
-console.log("Heloooo");
+console.log("Hello");
 
+// køb knap
 const købNuBtn = document.getElementById("KØB-NU-button");
 
 købNuBtn.addEventListener("click", function () {
@@ -13,7 +14,7 @@ købNuBtn.addEventListener("click", function () {
   }
 });
 
-
+// navigation bar scroll effect
 const nav = document.getElementById("topNav");
 
 window.addEventListener("scroll", () => {
@@ -24,6 +25,19 @@ window.addEventListener("scroll", () => {
   }
 });
 
+// kommer snart //
+const button = document.getElementById("tilmeld-knap");
+const emailField = document.getElementById("email");
+
+button.addEventListener("click", () => {
+  if (emailField.value.trim() === "") {
+    alert("Indtast venligst en e-mail.");
+    return;
+  }
+
+  button.textContent = "Tilmeldt";
+  button.disabled = true;
+});
 
 // Run on page load in case user refreshes mid-scroll
 if (window.scrollY === 0) {
