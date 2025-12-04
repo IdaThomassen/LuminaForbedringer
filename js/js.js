@@ -26,18 +26,7 @@ window.addEventListener("scroll", () => {
 });
 
 // kommer snart //
-const button = document.getElementById("tilmeld-knap");
-const emailField = document.getElementById("email");
 
-button.addEventListener("click", () => {
-  if (emailField.value.trim() === "") {
-    alert("Indtast venligst en e-mail.");
-    return;
-  }
-
-  button.textContent = "Tilmeldt";
-  button.disabled = true;
-});
 
 // footer bunden //
 const footerBtn = document.getElementById("footerSubmitBtn");
@@ -52,6 +41,7 @@ footerBtn.addEventListener("click", () => {
   footerBtn.textContent = "Tilmeldt";
   footerBtn.disabled = true;
 });
+
 
 // Run on page load in case user refreshes mid-scroll
 if (window.scrollY === 0) {

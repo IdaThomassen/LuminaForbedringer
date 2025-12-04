@@ -438,43 +438,9 @@ main {
   font-size: 16px;
 }
 
-/* Signup felt og knap */
-.signup-kasse {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 12px;
-  margin-top: 10px;
-}
 
-.signup-kasse input[type="email"] {
-  padding: 12px 16px;
-  border: none;
-  border-radius: 10px;
-  width: 470px;
-  height: 32px;
-  font-size: 16px;
-  font-style: italic;
-  background-color: #faf1e1;
-}
 
-.signup-kasse button {
-  padding: 12px 20px;
-  border: none;
-  border-radius: 10px;
-  background-color: #582f04;
-  color: white;
-  cursor: pointer;
-  transition: 0.2s;
-  font-size: 16px;
-}
 
-.signup-kasse button:disabled {
-  background-color: #f28f2c; /* grøn når tilmeldt */
-  color: white;
-  border: black 1px solid;
-  cursor: pointer;
-}
 
 /* Billedstyling */
 .lumina-kommer-snart-billede img {
@@ -535,20 +501,14 @@ h4 {
   color: #000000;
 }
 
-/* info tekst om lumina nederst i footer */
-#footer-lumina-info {
-  color: rgb(168, 16, 16);
-  background-color: #f28f2c;
-}
-
 /* Footer bund sektion */
 .lumina-footer {
-    background-color: #e29648; /* samme farve som dit billede */
-    padding: 25px 40px;
+    background-color: #f28f2c; /* samme farve som dit billede */
+    padding: 25px 180px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    font-family: Arial, sans-serif;
+    font-family: "Inter", sans-serif;
 }
 
 .footer-left p {
@@ -563,6 +523,7 @@ h4 {
 .newsletter-label {
     margin: 0 0 8px 0;
     font-size: 14px;
+    text-align: left;
 }
 
 .footer-signup {
@@ -594,8 +555,10 @@ h4 {
 }
 
 .footer-signup button:disabled {
-    background-color: #4CAF50;
+    background-color: #f28f2c;
     cursor: default;
+    border: #000000 1px solid;
+
 }
 
 
