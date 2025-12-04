@@ -25,10 +25,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
-// kommer snart //
-
-
-// footer bunden //
+// footer bunden email knap //
 const footerBtn = document.getElementById("footerSubmitBtn");
 const footerEmail = document.getElementById("footerEmail");
 

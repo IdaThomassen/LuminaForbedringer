@@ -49,7 +49,7 @@
   top: -6px;
 }
 
-/* Hero here is every change for hero video*/
+/* Hero */
 .hero {
   position: relative;
   height: 100vh;
@@ -58,7 +58,7 @@
   margin-bottom: 8px;
 }
 
-/* width and height ændre str på video */
+/* hero video */
 .hero__video {
   position: absolute;
   top: 150px;
@@ -70,7 +70,7 @@
   z-index: 0;
 }
 
-/* Shared hero overlay text (LUMINA + ONE) HER BØR JEG KUNNE FIKSE PLACERINGEN PÅ TEKSTEN */
+/* overskrift og titel i hero */
 .hero-text {
   position: absolute;
   z-index: 1;
@@ -96,7 +96,7 @@
   font-weight: 300;
 }
 
-/* lumina hero center text */
+/* lumina hero center tekst */
 .hero-text {
   right: 154px;
   top: 400px;
@@ -145,14 +145,14 @@
   transform: translateY(-2px);
 }
 
-/* Klik-effekt (mens man holder musen nede) */
+/* Klik-effekt */
 .button-køb-nu:active {
   background-color: #f28f2c;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   transform: translateY(0);
 }
 
-/* Tilstand når valgt */
+/* Tilstand når klikket */
 .button-køb-nu.active {
   background-color: #fffcf7;
   color: rgb(0, 0, 0);
@@ -191,7 +191,7 @@
 .fragtIkon {
   display: flex;
   align-items: center;
-  gap: 10px; /* mellem ikon og tekst */
+  gap: 10px; 
 }
 
 /* Ikon størrelse */
@@ -204,10 +204,10 @@
 .garantiIkon {
   display: flex;
   align-items: center;
-  gap: 10px; /* mellem ikon og tekst */
+  gap: 10px;
 }
 
-/* Teksten i baren */
+/* Teksten i den orange bar */
 .orange-info-bar p {
   margin: 0;
   font-size: 16px;
@@ -438,10 +438,6 @@ main {
   font-size: 16px;
 }
 
-
-
-
-
 /* Billedstyling */
 .lumina-kommer-snart-billede img {
   width: 480px;
@@ -449,7 +445,7 @@ main {
   object-fit: contain;
 }
 
-/*the logo above the about section*/
+/*lumina logo over om os tekst*/
 #minilogo {
   display: flex;
   justify-content: center;
@@ -461,7 +457,7 @@ main {
   padding-bottom: 30px;
 }
 
-/*About us text*/
+/*om os tekst*/
 p.p2 {
   display: flex;
   justify-content: center;
@@ -503,80 +499,61 @@ h4 {
 
 /* Footer bund sektion */
 .lumina-footer {
-    background-color: #f28f2c; /* samme farve som dit billede */
-    padding: 25px 180px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    font-family: "Inter", sans-serif;
+  background-color: #f28f2c;
+  padding: 25px 180px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: "Inter", sans-serif;
 }
 
 .footer-left p {
-    margin: 4px 0;
-    font-size: 14px;
+  margin: 4px 0;
+  font-size: 14px;
 }
 
 .footer-right {
-    text-align: right;
+  text-align: right;
 }
 
 .newsletter-label {
-    margin: 0 0 8px 0;
-    font-size: 14px;
-    text-align: left;
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  text-align: left;
 }
 
 .footer-signup {
-    display: flex;
-    align-items: center;
-    background-color: #f3ead8;
-    padding: 6px 10px;
-    border-radius: 12px;
-    gap: 10px;
+  display: flex;
+  align-items: center;
+  background-color: #f3ead8;
+  padding: 6px 10px;
+  border-radius: 12px;
+  gap: 10px;
 }
 
 .footer-signup input {
-    border: none;
-    background: transparent;
-    padding: 6px 8px;
-    font-size: 14px;
-    outline: none;
-    width: 180px;
+  border: none;
+  background: transparent;
+  padding: 6px 8px;
+  font-size: 14px;
+  outline: none;
+  width: 180px;
 }
 
 .footer-signup button {
-    background-color: #6b4321;
-    border: none;
-    padding: 5px 12px;
-    color: white;
-    border-radius: 8px;
-    font-size: 12px;
-    cursor: pointer;
+  background-color: #6b4321;
+  border: none;
+  padding: 5px 12px;
+  color: white;
+  border-radius: 8px;
+  font-size: 12px;
+  cursor: pointer;
 }
 
 .footer-signup button:disabled {
-    background-color: #f28f2c;
-    cursor: default;
-    border: #000000 1px solid;
-
-}
-
-
-/* Responsivt: på små skærme får input + info fuld bredde */
-@media (max-width: 600px) {
-  .footer-bottom {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .footer-signup {
-    width: 100%;
-    align-items: flex-start;
-  }
-
-  .input-wrapper {
-    width: 100%;
-  }
+  background-color: #f28f2c;
+  cursor: default;
+  border: #000000 1px solid;
 }
 
 /* Copyright nederst */
