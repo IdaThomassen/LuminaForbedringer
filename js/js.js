@@ -25,6 +25,16 @@ window.addEventListener("scroll", () => {
   }
 });
 
+const navLogo = document.querySelector(".nav-logo");
+
+window.addEventListener("scroll", () => {
+  if (window.scrollY > 40) {
+    navLogo.classList.add("hidden");
+  } else {
+    navLogo.classList.remove("hidden");
+  }
+});
+
 // footer bunden email knap //
 const footerBtn = document.getElementById("footerSubmitBtn");
 const footerEmail = document.getElementById("footerEmail");
@@ -38,7 +48,6 @@ footerBtn.addEventListener("click", () => {
   footerBtn.textContent = "Tilmeldt";
   footerBtn.disabled = true;
 });
-
 
 // Run on page load in case user refreshes mid-scroll
 if (window.scrollY === 0) {

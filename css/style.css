@@ -42,6 +42,16 @@
   justify-content: center;
 }
 
+/* lumina logo i nav bar bliver gemt ved scroll */
+.nav-logo {
+  transition: opacity 0.3s ease;
+}
+
+.nav-logo.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
 #topNav .lumina-tekst-logo {
   height: 20px;
   padding-left: 2px;
@@ -191,7 +201,7 @@
 .fragtIkon {
   display: flex;
   align-items: center;
-  gap: 10px; 
+  gap: 10px;
 }
 
 /* Ikon størrelse */
